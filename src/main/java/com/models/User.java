@@ -1,4 +1,4 @@
-package com.example.cs4500sp19s1jga.models
+package com.example.cs4500sp19s1jga.models;
 
 public class User {
 	private Integer id;
