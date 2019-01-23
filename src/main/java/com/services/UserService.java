@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserService {
 	static List<User> users = new ArrayList();
 
+	static {
+		users.add(new User(123, "alice", "alice", "Alice", "Wonderland"));
+		users.add(new User(234, "bob", "bob", "Bob", "Marley"));
+	}
+
 }
