@@ -1,7 +1,9 @@
 package com.example.cs4500sp19s1jga.services;
 
+import java.util.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class UserService {
@@ -23,8 +25,9 @@ public class UserService {
 		for(User user: users) {
 			if(user.getId() == id) {
 				return user;
-		}
+			}
 		return null;
+		}
 	}
 
 }
