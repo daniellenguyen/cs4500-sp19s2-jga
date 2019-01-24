@@ -1,4 +1,4 @@
-package com.example.cs4500sp19s1jga.services;
+package com.example.cs4500sp19s1jga;
 
 import java.util.*;
 import org.springframework.web.bind.annotation.GetMapping;
