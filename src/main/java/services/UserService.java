@@ -4,7 +4,7 @@ import java.util.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
+import com.example.cs4500sp19s1jga.models.User;
 
 @RestController
 public class UserService {
@@ -24,11 +24,11 @@ public class UserService {
 	public User findUserById(
 		@PathVariable("userId") Integer id) {
 		for(User user: users) {
-			if(user.getId() == id) {
+			if(user.getId().equals(id)) {
 				return user;
 			}
-		return null;
 		}
+		return null;
 	}
 
 }

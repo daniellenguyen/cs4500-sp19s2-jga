@@ -18,11 +18,11 @@ public class User {
 
 	// ID
 
-	public Integer getID() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setID(Integer id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
